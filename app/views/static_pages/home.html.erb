@@ -7,16 +7,23 @@
             </div>
          </div>
       <% end %>
-      <div class="rightTop">
-         <div class="title">
-            タスク管理
+
+      <%= link_to project_path(1) do %>
+         <div class="rightTop">
+            <div class="title">
+               タスク管理
+            </div>
+         </div> 
+      <% end %>
+
+      <%= link_to evaluation_path(1) do %>
+         <div class="leftDown">
+            <div class="title">
+               人事評価管理
+            </div>
          </div>
-      </div> 
-      <div class="leftDown">
-         <div class="title">
-            人事評価管理
-         </div>
-      </div>
+      <% end %>
+
       <div class="rightDown">
          <div class="title">
             プロジェクト管理
