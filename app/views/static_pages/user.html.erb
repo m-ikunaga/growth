@@ -1,0 +1,107 @@
+<div class="userContainer">
+   <div class="circle one">
+   </div>
+   <div class="profile">
+      <p>山田隆夫/47歳/システムエンジニア/代表取締役</p>
+   </div>
+   <div class="clearfix">
+      <div class="user_title">
+         <div class="user_title_detail"><i class="fas fa-user-tie"></i> profile</div>
+      </div>
+      <div class="user_profile">
+         <div class="user_profile_detail">
+            大阪支店でシステムエンジニアを担当しております社長の山田です！<br>
+            railsを得意としております。<br>
+            飲みに行きましょう！
+         </div>
+      </div>
+      <div class="user_title">
+         <div class="user_title_detail"><i class="fas fa-wrench"></i> skill</div>
+      </div>
+      <div class="userBlock clearfix">
+         <div class="skill_title">
+            <p><i class="far fa-circle"></i> RubyOnRails</p>
+         </div>         
+         <div class="skill_detail">
+            <p>開発環境構築（10pt）</p>
+            <p>基本的なCRUDアプリの開発（20pt）</p>
+            <p>ログイン機能（10pt）</p>        
+            <p>アクションケーブル（25pt）</p>
+         </div>
+         <div class="skill_title">
+            <p><i class="far fa-circle"></i> AWS</p>
+         </div>         
+         <div class="skill_detail">
+            <p>EC2インスタンス構築（10pt）</p>
+            <p>RDS構築（10pt）</p>
+            <p>VPCネットワーク設計（20pt）</p>
+            <p>サーバレス環境構築（30pt）</p>
+         </div>
+         <div class="skill_title">
+            <p><i class="far fa-circle"></i> PHP</p>
+         </div>         
+         <div class="skill_detail">
+            <p>開発環境構築（10pt）</p>
+            <p>基本的なCRUDアプリの開発（20pt）</p>
+         </div>
+         <div class="skill_title">
+            <p><i class="far fa-circle"></i> Python</p>
+         </div>         
+         <div class="skill_detail">
+            <p>開発環境構築（10pt）</p>
+            <p>基本的なCRUDアプリの開発（20pt）</p>
+         </div>
+         <div class="skill_title">
+            <p><i class="far fa-circle"></i> SQL</p>
+         </div>         
+         <div class="skill_detail">
+            <p>四大構文の基本的な使用（20pt）</p>
+            <p>複雑なソート構文の使用（30pt）</p>
+         </div>
+
+      </div>
+
+      <div class="userBlock clearfix">
+         <canvas id="myRaderChart"></canvas>
+         <!-- CDN -->
+      　<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+      
+         <script>
+         var ctx = document.getElementById("myRaderChart");
+         var myRadarChart = new Chart(ctx, {
+               type: 'radar', 
+               data: {
+                  labels: ["Rails", "AWS", "PHP", "SQL", "Python"],
+                  datasets: [{
+                     label: '山田隆夫',
+                     data: [65, 70, 30, 50, 30],
+                     backgroundColor: 'RGBA(255,228,196, 0.5)',
+                     borderColor: 'RGBA(225,95,150, 1)',
+                     borderWidth: 1,
+                     pointBackgroundColor: 'RGB(46,106,177)'
+                  }]
+               },
+               options: {
+                  title: {
+                     display: true,
+                  },
+                  scale:{
+                     ticks:{
+                           suggestedMin: 0,
+                           suggestedMax: 100,
+                           stepSize: 10,
+                           callback: function(value, index, values){
+                              return  value
+                           }
+                     }
+                  }
+               }
+         });
+         </script>
+      </div>
+   </div>
+
+   <div class="userContent">
+   </div>
+
+</div>
