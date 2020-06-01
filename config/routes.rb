@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'static_pages#home'
+  resources :users, only: [:show, :index, :new, :create]
+  resources :projects, only: [:show, :index]
+  resources :evaluations, only: [:show, :index]
 end

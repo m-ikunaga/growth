@@ -1,1 +1,37 @@
-<h2>test</h2>
+<div class="topContainer">
+   <div class="menu">
+      <%= link_to users_path do %>
+         <div class="leftTop">
+            <div class="title">
+               人的資源管理
+            </div>
+         </div>
+      <% end %>
+
+      <%= link_to project_path(1) do %>
+         <div class="rightTop">
+            <div class="title">
+               タスク管理
+            </div>
+         </div> 
+      <% end %>
+
+      <%= link_to evaluation_path(1) do %>
+         <div class="leftDown">
+            <div class="title">
+               人事評価管理
+            </div>
+         </div>
+      <% end %>
+
+      <div class="rightDown">
+         <div class="title">
+            プロジェクト管理
+         </div>
+         <p class="top_p">未作成</p>
+      </div>
+   </div>
+</div>
+
+
+<%= link_to "Sign up now", new_user_path %>
