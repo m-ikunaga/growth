@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_29_075004) do
+ActiveRecord::Schema.define(version: 2020_06_01_065124) do
 
   create_table "evaluations", force: :cascade do |t|
     t.integer "skill_eval"
@@ -31,6 +31,9 @@ ActiveRecord::Schema.define(version: 2020_05_29_075004) do
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "password_digest"
+    t.string "image"
+    t.index ["email"], name: "index_users_on_email", unique: true
   end
 
 end

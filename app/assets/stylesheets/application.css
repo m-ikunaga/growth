@@ -13,3 +13,518 @@
  *= require_tree .
  *= require_self
  */
+
+ /* header */
+header {
+   text-align: center;
+   height: 60px;
+}
+
+.clearfix::after {
+   content: "";
+   display: block;
+   clear: both;
+ }
+
+nav {
+   color: brown;
+   display: inline;
+   text-align: right;
+   float: right;
+   padding-top: 7px;
+}
+
+.logo {
+   text-decoration: none;
+   font-size: 30px;
+   font-family: serif;
+   color: brown;
+}
+
+nav ul {
+   display: inline;
+
+}
+
+nav ul li {
+   list-style: none;
+   display: inline;
+   margin-right: 5px;   
+}
+
+
+/* top */
+.topContainer{
+   /* width: 100%; */
+}
+
+.menu {
+   text-align: center;
+   height: 500px;
+   width: 65%;
+   margin: 0 auto;
+}
+
+.leftTop {
+   width: 40%;
+   height: 40%;
+   background-color: pink;
+   background-image: url('resource.jpg');
+   float: left;
+   border-radius: 30px;
+}
+
+.rightTop{
+   width: 40%;
+   height: 40%;
+   background-color: pink;
+   background-image: url('process.jpg');
+   background-size: cover;
+   float: right;
+   border-radius: 30px;
+}
+
+.leftDown {
+   width: 40%;
+   height: 40%;
+   margin-top: 10%;
+   background-color: pink;
+   background-image: url('evaluation.jpg');
+   background-size: cover;
+   float: left;
+   border-radius: 30px;
+}
+
+.rightDown{
+   width: 40%;
+   height: 40%;
+   margin-top: 10%;
+   background-color: pink;
+   background-image: url('project.jpg');
+   background-size: cover;
+   float: right;
+   border-radius: 30px;
+   position: relative;
+}
+
+.rightDown::after {
+   content: '';
+   background-color: rgba(0,0,0,.5);
+   border-radius: 30px;
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+ }
+
+ .top_p {
+   margin: 0;
+   padding: 50px;
+   font-size: 20px;
+   color: #FFF;
+   position: relative;
+   z-index: 1;
+ }
+
+.title {
+   background-color: rosybrown;
+   border-radius: 30px 30px 0px 0px;
+   color: white;
+   font-family: arial;
+}
+
+/* humanResources */
+.resource_title {
+   text-align: center;
+}
+
+.resource_title_detail {
+   margin: auto;
+   margin-top: 20px;
+   border: 1px solid brown;
+   border-radius: 10px;
+   width: 300px;
+   background-color: papayawhip;
+}
+
+.hr_stage {
+   width: 100%;
+   height: 100px;
+   text-align: center;
+   margin-top: 20px;
+}
+
+.hr_stage2 {
+   width: 50%;
+   height: 100px;
+   float: left;
+}
+
+.hr_stage4 {
+   width: 25%;
+   height: 100px;
+   float: left;
+}
+
+.hr_stage100 {
+   width: 23%;
+   height: 330px;
+   margin-left: 20px;
+   float: left;
+   border-radius: 30px;
+   border: solid 1px burlywood;
+}
+
+.hr_stage101 {
+   width: 33%;
+   height: 100px;
+   float: left;
+   margin-top: 5px;
+}
+
+.team_name {
+   width: 100%;
+   text-align: center;
+   background-color: rosybrown;
+   border-radius: 30px 30px 0px 0px;
+   color: white;
+   font-family: arial;
+}
+
+.circle {
+   height: 70px;
+   width: 70px;
+   border-radius: 40px;
+   margin: auto;
+   border: 1px solid brown;
+   background-position: center;
+   background-size: cover;
+}
+
+
+
+.one {
+   background-image: url(man.jpg);
+}
+
+.two {
+   background-image: url(man2.jpg);
+}
+
+.three {
+   background-image: url(girl.jpg);
+}
+
+.four {
+   background-image: url(man3.jpg);
+}
+
+.five {
+   background-image: url(girl2.jpg);
+}
+
+.six {
+   background-image: url(girl3.jpg);
+}
+
+.seven {
+   background-image: url(man4.jpg);
+}
+
+.eight {
+   background-image: url(man5.jpg);
+}
+
+.nine {
+   background-image: url(girl4.jpg);
+}
+
+.ten {
+   background-image: url(girl5.jpg);
+}
+
+/* user */
+
+.profile {
+   width: 100%;
+   font-size: 15px;
+   font-weight: bold;
+   font-family: serif;
+   color: brown;
+   text-align: center;
+}
+
+.userBlock {
+   width: 50%;
+   height: 300px;
+   float: left;
+   text-align: center;
+}
+
+.userContent {
+   height: 500px;
+}
+
+.user_title {
+   width: 100%;
+   text-align: center;
+   margin-top: 40px;
+}
+
+.user_title_detail {
+   margin: auto;
+   border: 1px solid brown;
+   border-radius: 10px;
+   width: 100px;
+   background-color: papayawhip;
+}
+
+.skill_title {
+   font-weight: bold;
+   text-align: left;
+   margin-left: 200px;
+}
+
+.skill_detail {
+   font-size: small;
+   text-align: left;
+   margin-left: 250px;
+}
+
+.user_profile {
+   width: 100%;
+   margin-top: 40px;
+}
+
+.user_profile_detail {
+   width: 500px;
+   margin: auto;
+}
+
+
+/* process */
+.processContainer {
+   width: 100%;
+   height: 100vh;
+}
+
+.process_leftpain {
+   width: 15%;
+   height: 100%;
+   background-color: wheat;
+   float: left;
+}
+
+.process_painmenu_top {
+   width: 100%;
+   height: 50px;
+   background-color: whitesmoke;
+   margin-top: 50px;
+   box-sizing: border-box;
+   padding-top: 15px;
+   padding-left: 10px;
+   font-weight: bold;
+}
+
+.process_painmenu {
+   width: 100%;
+   height: 50px;
+   background-color: dimgray;
+   box-sizing: border-box;
+   padding-top: 15px;
+   padding-left: 10px;
+   color: white;
+}
+
+.process_right {
+   width: 85%;
+   height: 100%;
+   float: left;
+   background-color: whitesmoke;
+}
+
+.process_top {
+   width: 100%;
+   height: 6%;
+   background-color: rosybrown;
+   padding-top: 10px;
+}
+
+.process_main {
+   width: 100%;
+   height: 85%;
+}
+
+.process_title {
+   border: 1px solid brown;
+   border-radius: 10px;
+   width: 260px;
+   background-color: papayawhip;
+   margin-left: 50px;
+   padding-left: 20px;
+}
+
+.process_line {
+   width: 100%;
+   height: 70px;
+   background-color: linen;
+}
+
+.process_member {
+   width: 30%;
+   height: 30%;
+   border-radius: 30px;
+   padding-left: 50px;
+   padding-top: 20px;
+   margin-left: 15%;
+   margin-top: 50px;
+   box-sizing: border-box;
+   border: 1px solid rosybrown;
+   float: left;
+}
+
+.process_circle {
+   height: 60px;
+   width: 60px;
+   border-radius: 40px;
+   border: 1px solid brown;
+   background-position: center;
+   background-size: cover;
+   margin-left: 20px;
+   float: left;
+}
+
+.process_upper {
+   height: 47%;
+   width: 100%;
+}
+
+.process_upper_left {
+   width: 30%;
+   height: 100%;
+   float: left;
+   padding-left: 150px;
+}
+
+.process_calender {
+   width: 30%;
+   height: 100%;
+   float: left;
+   margin-left: 100px;
+}
+
+.process_under {
+   width: 100%;
+   height: 47%;
+   box-sizing: border-box;
+   padding-left: 150px;
+}
+
+.process_span {
+   font-weight: bold;
+   font-size: 20px;
+}
+
+/* evaluation */
+.eval_container {
+   width: 100%;
+   height: 100vh;
+}
+
+.eval_top {
+   width: 100%;
+   height: 50%;
+}
+
+.eval_top_left {
+   width: 50%;
+   height: 100%;
+   float: left;
+}
+
+.eval_top_right {
+   width: 50%;
+   height: 100%;
+   float: left;
+}
+
+.eval_under {
+   width: 100%;
+   height: 50%;
+}
+
+.eval_circle {
+   height: 150px;
+   width: 150px;
+   border-radius: 75px;
+   border: 1px solid brown;
+   background-position: center;
+   background-size: cover;
+   margin: auto;
+   margin-top: 60px;
+}
+
+.eval_title {
+   width: 200px;
+   height: 50px;
+   background-color: darksalmon;
+   float: left;
+   border: 1px solid brown;
+   border-radius: 10px;
+   margin-left: 100px;
+   margin-top: 70px;
+   padding: 13px;
+   box-sizing: border-box;
+   font-weight: bold;
+   text-align: center;
+}
+
+.eval_value {
+   width: 50px;
+   height: 50px;
+   border-radius: 20px;
+   border: 1px solid brown;
+   background-color: burlywood;
+   text-align: center;
+   padding: 13px;
+   box-sizing: border-box;
+   font-weight: bold;
+   color: chocolate;
+   float: left;
+   margin-top: 70px;
+   margin-left: 30px;
+}
+
+.eval_value2 {
+   width: 100px;
+   height: 25px;
+   border-radius: 20px;
+   border: 1px solid brown;
+   background-color: darkgray;
+   text-align: center;
+   box-sizing: border-box;
+   float: left;
+   margin-top: 85px;
+   margin-left: 30px;
+}
+
+.eval_table {
+   width: 80%;
+   height: 100%;
+   margin: auto;
+   border: solid 1px brown;
+   text-align: center;
+   border-collapse: collapse;
+}
+
+.eval_table th {
+   background-color: rosybrown;
+   height: 30px;
+   border: solid 1px brown;
+}
+
+.eval_table td {
+   border: solid 1px brown;
+   background-color: linen;
+}

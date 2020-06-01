@@ -1,9 +1,12 @@
 require 'test_helper'
 
 class EvaluationsControllerTest < ActionDispatch::IntegrationTest
-  test "should get show" do
-    get evaluations_show_url
-    assert_response :success
+  def setup
+    @user = User.new(name: "Example User", email: "user@example.com")
+  end
+
+  test "should be valid" do
+    assert @user.valid?
   end
 
 end
